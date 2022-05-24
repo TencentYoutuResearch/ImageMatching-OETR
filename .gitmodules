@@ -1,0 +1,24 @@
+[submodule "third_party/ASLFeat"]
+	path = third_party/ASLFeat
+	url = https://github.com/lzx551402/ASLFeat.git
+[submodule "third_party/D2Net"]
+	path = third_party/D2Net
+	url = https://github.com/mihaidusmanu/d2-net.git
+[submodule "third_party/SuperGluePretrainedNetwork"]
+	path = third_party/SuperGluePretrainedNetwork
+	url = https://github.com/magicleap/SuperGluePretrainedNetwork.git
+[submodule "third_party/LoFTR"]
+	path = third_party/LoFTR
+	url = https://github.com/zju3dv/LoFTR.git
+[submodule "third_party/r2d2"]
+	path = third_party/r2d2
+	url = https://github.com/lzx551402/contextdesc.git
+[submodule "third_party/disk"]
+	path = third_party/disk
+	url = https://github.com/cvlab-epfl/disk.git
+[submodule "third_party/contextdesc"]
+	path = third_party/contextdesc
+	url = https://github.com/lzx551402/contextdesc.git
+[submodule "third_party/COTR"]
+	path = third_party/COTR
+	url = https://github.com/ubc-vision/COTR.git
