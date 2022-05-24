@@ -28,17 +28,11 @@ cd OETR/
 git submodule update --init
 ```
 2. install requirements for different submodules
-3. Download model weights and place them in the weights folder.
+3. Download model weights and place them in the weights folder, and weights could be downloaded from https://drive.google.com/drive/folders/1UedCycHJph4PDoStAAyxtdRxUX9PwLsJ?usp=sharing.
 
 
 ## Inference and evaluation
-Download the image pairs and relative pose groundtruth of [IMC]() and [megadepth]() to assets/. You could also chose dataset and methods, please reference to `evaluate_imc.sh` and `evaluate_megadepth.sh`, after the results process, you could run evaluation pipeline for imc or megadepth:
-```
-python3 dloc/evaluate/eval_imc.py --input_pairs ./dataset/ImageMatching/imc_0.1.txt --results_path outputs/imc_all/ --methods_file assets/methods.txt
-or
-python3 dloc/evaluate/eval_imc.py --input_pairs ./dataset/megadepth/imc_0.1.txt --results_path outputs/imc_all/ --methods_file assets/methods.txt
-```
-
+Download the image pairs and relative pose groundtruth of [imc](https://drive.google.com/drive/folders/1-kAESEYPXe3Byzgu51XWDwlTaDx0Jldo?usp=sharing) and [megadepth](https://drive.google.com/drive/folders/1D0u64-SaMufpTiBVQQAg7C1NpOtQSBNs?usp=sharing) to `assets/` folder. You could also chose dataset and methods, please reference to `evaluate_imc.sh` and `evaluate_megadepth.sh`:
 1. Benchmark on IMC dataset
 ```sh evaluate_imc.sh```
 
@@ -46,8 +40,12 @@ python3 dloc/evaluate/eval_imc.py --input_pairs ./dataset/megadepth/imc_0.1.txt 
 2. Benchmark on Megadepth dataset
 ```sh evaluate_megadepth.sh```
 
+You can choose only to execute part of the algorithm inside. After the results process, you could run an evaluation pipeline for imc or megadepth:
+```
+python3 dloc/evaluate/eval_imc.py --input_pairs ./assets/imc/imc_0.1.txt --results_path outputs/imc_2011/ --methods_file assets/methods.txt
+or
+python3 dloc/evaluate/eval_megadepth.py --input_pairs ./assets/megadepth/megadepth_scale_34.txt --results_path outputs/megadepth_34/ --methods_file assets/methods.txt
+```
 
-## Debugging and Visualization
-Download https://drive.weixin.qq.com/s?k=AJEAIQdfAAob00fTSEAKMA9AatACk datasets to assets.
 
-Weights could be downloaded from https://drive.weixin.qq.com/s?k=AJEAIQdfAAo97Nnovq.
+

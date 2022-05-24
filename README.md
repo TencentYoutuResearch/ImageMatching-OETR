@@ -44,8 +44,10 @@ For the MegaDepth dataset, we use depth maps provided in the [original MegaDepth
     - Images are undistorted manually in D2-Net since the undistorted images from MegaDepth do not come with corresponding intrinsics.
     - Path of the download data will be referred to as `/path/to/megadepth_d2net`
 
-In order to avoid online calculation, we complete the calculation of the groundtruth of the overlap box offline through image depth, camera intrinsic, and extrinsic, and besides original dataset files(megadepth_train_pairs.txt and megadepth_validation_scale.txt) could be download from [here](https://drive.google.com/drive/folders/1xN56olSJIfqZ4i35ENoNeyt8Wi2m7iRA?usp=sharing)
-
+In order to avoid online calculation, we complete the calculation of the groundtruth of the overlap box offline through image depth, camera intrinsic, and extrinsic, and besides original dataset files(megadepth_train_pairs.txt and megadepth_validation_scale.txt) could be download from [here](https://drive.google.com/drive/folders/1xN56olSJIfqZ4i35ENoNeyt8Wi2m7iRA?usp=sharing), create symlinks from the downloaded datasets to:
+```
+ln -s /path/to/megadepth/* ./dataset/megadepth
+```
 
 ### Validation on Megadepth
 As we split the MegaDepth test set (with ten scenes) into subsets according to the overlap scale ratio for image pairs. We separate overlap scales into $[1, 2), [2, 3), [3, 4), [4, +\infty)$ and combine $[2, 3), [3, 4), [4, +\infty)$ as $[2, +\infty)$ for image pairs with noticeable scale difference. All datasets could be accessed from the assets folder. It could be download validation files from [here](https://drive.google.com/drive/folders/1D0u64-SaMufpTiBVQQAg7C1NpOtQSBNs?usp=sharing).
