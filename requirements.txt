@@ -1,0 +1,17 @@
+./third_party/disk/submodules/torch-dimcheck
+./third_party/disk/submodules/torch-localize
+./third_party/disk/submodules/unets
+h5py
+imageio
+matplotlib
+numpy
+opencv-contrib-python==3.4.2.17
+opencv-python==3.4.2.17
+Pillow
+pydegensac
+pyyaml
+tensorboard
+tensorflow==1.15.0
+tensorflow-estimator==1.15.2
+torch
+tqdm
