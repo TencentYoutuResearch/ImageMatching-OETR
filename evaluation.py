@@ -336,7 +336,6 @@ def main(
                 pair,
                 matching,
                 with_desc,
-                warp_origin=warp_origin,
             )
         else:
             results = preprocess_match_pipeline(
@@ -352,7 +351,6 @@ def main(
                 pair,
                 matching,
                 with_desc,
-                warp_origin=warp_origin,
             )
             if 'icp' in config['matcher']['model']['name']:
                 viz_path = name0 + '_' + name1

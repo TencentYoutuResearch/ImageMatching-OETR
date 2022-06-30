@@ -22,8 +22,8 @@ The repository is structured as follows:
 - weights/: Download the trained model weights file to the `weights` folder.
 
 ## Requirements
-- Torch == 0.3.1
-- Torchvision == 0.2.1
+- Torch >= 1.6.0
+- Torchvision >= 0.7.0
 - Python == 3.6
 
 For training and inference, all supported algorithm dependencies are presented in [requirements.txt](requirements.txt).
